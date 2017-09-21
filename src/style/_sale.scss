@@ -1,0 +1,112 @@
+.sale{
+    background:#f5f5f5;
+    .title{
+        font-size:12px;display:flex;font-weight:normal;height: 0.4rem;
+        line-height:0.4rem;position: fixed;width:100%;top:0px;background:white;
+        z-index: 2;
+        span{
+            flex:1;text-align: center;position: relative;
+        }
+        .active{
+            color:#a651b7;
+            &:after{
+                position: absolute; width:0.18rem;height:1px;background:#a651b7;
+                content:'';bottom:8px;left:0.85rem;   
+            }
+        }
+        &:after{
+            background:#f2f2f2;width:100%;height:1px; position: absolute;
+            bottom:0px;content:'';
+        }
+    }
+    .today{
+        
+        .start{
+            height:0.96rem;background:#f5c400;
+            p{
+                display:flex;padding-top:0.2rem;flex-direction: column;
+                justify-content: center;align-items:center;
+                i{
+                    display: block;width:0.2rem;height: 0.2rem;margin-bottom:0.16rem;
+                    background:url("../images/sale1.png");background-size:0.2rem;
+                }
+                span{
+                    font-weight: lighter;
+                    font-size:12px;color:white;font-weight: normal;
+                }
+             }
+        }
+        .goodList{
+            .goods{
+                 margin-top:6px;background:white;
+                .picture{
+                    padding:6px 8px 0px;background:white;position: relative;
+                    img{
+                        width:100%;
+                    }
+                    p{
+                        color:#fda3a2;background:#f9f9f9;width:0.3rem;height:0.3rem;
+                        position: absolute;top:12px;right:10px;font-size:12px;
+                        line-height:0.3rem;text-align: center;
+                    }
+                }
+                h1{font-size:12px;font-weight:normal;line-height:0.26rem;line-height:0.26rem;
+                    background:white;padding-left:8px;
+                }
+                h2{
+                    font-size:12px;font-weight:normal;line-height:0.26rem;line-height:0.26rem;
+                    background:white; color:#bbb;padding-left:8px;
+                }
+                .bottom{
+                    display: flex;justify-content: space-between;
+                    div{
+                        height:0.46rem;display: flex;flex-direction: column;
+                        width:1.2rem;padding-left:8px;
+                        span{
+                            width:1.2rem;font-size:12px;height: 24px;
+                            border:1px solid #bbb;background:#eee;
+                            border-radius: 4px;text-align: center;line-height:22px;
+                        }
+                        p{
+                            em{
+                                font-size:12px;color:red;font-style: normal;
+                            }
+                            i{
+                                font-size:12px;color:#9f9f9f;padding-left:8px;
+                                text-decoration: line-through;font-style: normal;
+                            }
+                        }
+                        
+                    }
+                    a{
+                        width:1.2rem;height:0.34rem;border:1px solid #a4a4a4;
+                        font-size:12px;display:flex;border-radius:4px;
+                        margin-right:8px;
+                        p{
+                            width:0.8rem;display: flex;flex-direction: column;
+                            
+                            span{
+                                width:100%;text-align: center;
+                            }
+                            i{
+                                width:100%;text-align: center;
+                            }
+                        }
+                        em{
+                            background:url("../images/cart.10e6a1.png") no-repeat center;
+                            flex:1;height:100%;background-size:0.2rem;position: relative;
+                            &:after{
+                                position: absolute;content:'';height:0.22rem;width:1px;background:#9a9a9a;
+                                top:4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .last{
+                height:1.2rem;background:url('../images/myorder4.png') no-repeat center 30px;
+                background-size: auto 0.4rem;
+            }
+        }
+    }
+}
